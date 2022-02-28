@@ -1,3 +1,4 @@
+import 'package:basic_example/bigbluebutton_page.dart';
 import 'package:basic_example/data_channel/data_channel_page.dart';
 import 'package:basic_example/get_user_media_sample.dart';
 import 'package:basic_example/loopback_sample.dart';
@@ -42,6 +43,12 @@ class _MainPageState extends State<MainPage> {
               title: Text('Signaling Page'),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) => SignalingPage(),
+              )),
+            ),
+            ListTile(
+              title: Text('Big blue button Page'),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => BigbluebuttonPage(),
               )),
             ),
           ],
